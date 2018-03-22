@@ -7,21 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52B0DB62064628000F8A1F4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F22206338AE00D26729 /* Info.plist */; };
 		E5C12F17206338AE00D26729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F16206338AE00D26729 /* AppDelegate.swift */; };
-		E5C12F19206338AE00D26729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F18206338AE00D26729 /* ViewController.swift */; };
+		E5C12F19206338AE00D26729 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F18206338AE00D26729 /* HomeVC.swift */; };
 		E5C12F1C206338AE00D26729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F1A206338AE00D26729 /* Main.storyboard */; };
 		E5C12F1E206338AE00D26729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F1D206338AE00D26729 /* Assets.xcassets */; };
 		E5C12F21206338AE00D26729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F1F206338AE00D26729 /* LaunchScreen.storyboard */; };
+		E5C12F2C20635E0A00D26729 /* PumpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F2B20635E0A00D26729 /* PumpVC.swift */; };
+		E5C12F2E20635E1200D26729 /* HeatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F2D20635E1200D26729 /* HeatVC.swift */; };
+		E5C12F3020635E1A00D26729 /* PendulumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F2F20635E1A00D26729 /* PendulumVC.swift */; };
+		E5C12F3220635E5200D26729 /* PairedDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3120635E5200D26729 /* PairedDevicesVC.swift */; };
+		E5C12F3420635E5A00D26729 /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3320635E5A00D26729 /* LightVC.swift */; };
+		E5C12F3620635E6B00D26729 /* SessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3520635E6B00D26729 /* SessionVC.swift */; };
+		E5C12F3820636F0500D26729 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3720636F0500D26729 /* BluetoothManager.swift */; };
+		E5C12F3A206375A500D26729 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F39206375A500D26729 /* PeripheralManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5C12F13206338AE00D26729 /* Oil Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oil Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C12F16206338AE00D26729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5C12F18206338AE00D26729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5C12F18206338AE00D26729 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E5C12F1B206338AE00D26729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5C12F1D206338AE00D26729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C12F20206338AE00D26729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C12F22206338AE00D26729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C12F2B20635E0A00D26729 /* PumpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpVC.swift; sourceTree = "<group>"; };
+		E5C12F2D20635E1200D26729 /* HeatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatVC.swift; sourceTree = "<group>"; };
+		E5C12F2F20635E1A00D26729 /* PendulumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendulumVC.swift; sourceTree = "<group>"; };
+		E5C12F3120635E5200D26729 /* PairedDevicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDevicesVC.swift; sourceTree = "<group>"; };
+		E5C12F3320635E5A00D26729 /* LightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
+		E5C12F3520635E6B00D26729 /* SessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVC.swift; sourceTree = "<group>"; };
+		E5C12F3720636F0500D26729 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		E5C12F39206375A500D26729 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +71,46 @@
 		E5C12F15206338AE00D26729 /* Oil Dropper */ = {
 			isa = PBXGroup;
 			children = (
-				E5C12F16206338AE00D26729 /* AppDelegate.swift */,
-				E5C12F18206338AE00D26729 /* ViewController.swift */,
-				E5C12F1A206338AE00D26729 /* Main.storyboard */,
-				E5C12F1D206338AE00D26729 /* Assets.xcassets */,
-				E5C12F1F206338AE00D26729 /* LaunchScreen.storyboard */,
-				E5C12F22206338AE00D26729 /* Info.plist */,
+				E5C12F2820635DAD00D26729 /* User Interface */,
+				E5C12F2A20635DC500D26729 /* View Controllers */,
+				E5C12F2920635DB900D26729 /* Core */,
 			);
 			path = "Oil Dropper";
+			sourceTree = "<group>";
+		};
+		E5C12F2820635DAD00D26729 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E5C12F1D206338AE00D26729 /* Assets.xcassets */,
+				E5C12F1A206338AE00D26729 /* Main.storyboard */,
+				E5C12F1F206338AE00D26729 /* LaunchScreen.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E5C12F2920635DB900D26729 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E5C12F3720636F0500D26729 /* BluetoothManager.swift */,
+				E5C12F39206375A500D26729 /* PeripheralManager.swift */,
+				E5C12F16206338AE00D26729 /* AppDelegate.swift */,
+				E5C12F22206338AE00D26729 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E5C12F2A20635DC500D26729 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5C12F18206338AE00D26729 /* HomeVC.swift */,
+				E5C12F3120635E5200D26729 /* PairedDevicesVC.swift */,
+				E5C12F2B20635E0A00D26729 /* PumpVC.swift */,
+				E5C12F2D20635E1200D26729 /* HeatVC.swift */,
+				E5C12F2F20635E1A00D26729 /* PendulumVC.swift */,
+				E5C12F3320635E5A00D26729 /* LightVC.swift */,
+				E5C12F3520635E6B00D26729 /* SessionVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52B0DB62064628000F8A1F4 /* Info.plist in Resources */,
 				E5C12F21206338AE00D26729 /* LaunchScreen.storyboard in Resources */,
 				E5C12F1E206338AE00D26729 /* Assets.xcassets in Resources */,
 				E5C12F1C206338AE00D26729 /* Main.storyboard in Resources */,
@@ -136,7 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5C12F19206338AE00D26729 /* ViewController.swift in Sources */,
+				E5C12F3420635E5A00D26729 /* LightVC.swift in Sources */,
+				E5C12F19206338AE00D26729 /* HomeVC.swift in Sources */,
+				E5C12F3620635E6B00D26729 /* SessionVC.swift in Sources */,
+				E5C12F2C20635E0A00D26729 /* PumpVC.swift in Sources */,
+				E5C12F3820636F0500D26729 /* BluetoothManager.swift in Sources */,
+				E5C12F3A206375A500D26729 /* PeripheralManager.swift in Sources */,
+				E5C12F2E20635E1200D26729 /* HeatVC.swift in Sources */,
+				E5C12F3220635E5200D26729 /* PairedDevicesVC.swift in Sources */,
+				E5C12F3020635E1A00D26729 /* PendulumVC.swift in Sources */,
 				E5C12F17206338AE00D26729 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
