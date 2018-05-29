@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E52B0DB62064628000F8A1F4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F22206338AE00D26729 /* Info.plist */; };
+		E52B0DBA2064868300F8A1F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B0DB92064868300F8A1F4 /* Extensions.swift */; };
+		E5AF66BC2069AB52005F9361 /* StatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AF66BB2069AB52005F9361 /* StatVC.swift */; };
 		E5C12F17206338AE00D26729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F16206338AE00D26729 /* AppDelegate.swift */; };
 		E5C12F19206338AE00D26729 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F18206338AE00D26729 /* HomeVC.swift */; };
 		E5C12F1C206338AE00D26729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C12F1A206338AE00D26729 /* Main.storyboard */; };
@@ -18,12 +19,16 @@
 		E5C12F3020635E1A00D26729 /* PendulumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F2F20635E1A00D26729 /* PendulumVC.swift */; };
 		E5C12F3220635E5200D26729 /* PairedDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3120635E5200D26729 /* PairedDevicesVC.swift */; };
 		E5C12F3420635E5A00D26729 /* LightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3320635E5A00D26729 /* LightVC.swift */; };
-		E5C12F3620635E6B00D26729 /* SessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3520635E6B00D26729 /* SessionVC.swift */; };
-		E5C12F3820636F0500D26729 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3720636F0500D26729 /* BluetoothManager.swift */; };
-		E5C12F3A206375A500D26729 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F39206375A500D26729 /* PeripheralManager.swift */; };
+		E5C12F3820636F0500D26729 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C12F3720636F0500D26729 /* Bluetooth.swift */; };
+		EFF26AFB8734F699AF5DCD67 /* Pods_Oil_Dropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664FD89206E3CE2D3C2F9DBF /* Pods_Oil_Dropper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E94CB461633AF8251D33C30 /* Pods-Oil Dropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oil Dropper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper.release.xcconfig"; sourceTree = "<group>"; };
+		664FD89206E3CE2D3C2F9DBF /* Pods_Oil_Dropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oil_Dropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693E7C4FBAADE86050515BB3 /* Pods-Oil Dropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oil Dropper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper.debug.xcconfig"; sourceTree = "<group>"; };
+		E52B0DB92064868300F8A1F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E5AF66BB2069AB52005F9361 /* StatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatVC.swift; sourceTree = "<group>"; };
 		E5C12F13206338AE00D26729 /* Oil Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oil Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C12F16206338AE00D26729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C12F18206338AE00D26729 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -36,9 +41,7 @@
 		E5C12F2F20635E1A00D26729 /* PendulumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendulumVC.swift; sourceTree = "<group>"; };
 		E5C12F3120635E5200D26729 /* PairedDevicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDevicesVC.swift; sourceTree = "<group>"; };
 		E5C12F3320635E5A00D26729 /* LightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightVC.swift; sourceTree = "<group>"; };
-		E5C12F3520635E6B00D26729 /* SessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVC.swift; sourceTree = "<group>"; };
-		E5C12F3720636F0500D26729 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
-		E5C12F39206375A500D26729 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
+		E5C12F3720636F0500D26729 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF26AFB8734F699AF5DCD67 /* Pods_Oil_Dropper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42CEA596782202DB5147CCA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693E7C4FBAADE86050515BB3 /* Pods-Oil Dropper.debug.xcconfig */,
+				0E94CB461633AF8251D33C30 /* Pods-Oil Dropper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79EE34D1DD16801C407E503F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664FD89206E3CE2D3C2F9DBF /* Pods_Oil_Dropper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5C12F0A206338AE00D26729 = {
 			isa = PBXGroup;
 			children = (
 				E5C12F15206338AE00D26729 /* Oil Dropper */,
 				E5C12F14206338AE00D26729 /* Products */,
+				42CEA596782202DB5147CCA1 /* Pods */,
+				79EE34D1DD16801C407E503F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +104,9 @@
 		E5C12F2820635DAD00D26729 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				E5C12F1D206338AE00D26729 /* Assets.xcassets */,
 				E5C12F1A206338AE00D26729 /* Main.storyboard */,
 				E5C12F1F206338AE00D26729 /* LaunchScreen.storyboard */,
+				E5C12F1D206338AE00D26729 /* Assets.xcassets */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -91,8 +114,8 @@
 		E5C12F2920635DB900D26729 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E5C12F3720636F0500D26729 /* BluetoothManager.swift */,
-				E5C12F39206375A500D26729 /* PeripheralManager.swift */,
+				E5C12F3720636F0500D26729 /* Bluetooth.swift */,
+				E52B0DB92064868300F8A1F4 /* Extensions.swift */,
 				E5C12F16206338AE00D26729 /* AppDelegate.swift */,
 				E5C12F22206338AE00D26729 /* Info.plist */,
 			);
@@ -108,7 +131,7 @@
 				E5C12F2D20635E1200D26729 /* HeatVC.swift */,
 				E5C12F2F20635E1A00D26729 /* PendulumVC.swift */,
 				E5C12F3320635E5A00D26729 /* LightVC.swift */,
-				E5C12F3520635E6B00D26729 /* SessionVC.swift */,
+				E5AF66BB2069AB52005F9361 /* StatVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -120,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C12F25206338AE00D26729 /* Build configuration list for PBXNativeTarget "Oil Dropper" */;
 			buildPhases = (
+				C8B18F2707E27F4A362F8BB5 /* [CP] Check Pods Manifest.lock */,
 				E5C12F0F206338AE00D26729 /* Sources */,
 				E5C12F10206338AE00D26729 /* Frameworks */,
 				E5C12F11206338AE00D26729 /* Resources */,
+				B9E9120D210245E3403D3E72 /* [CP] Embed Pods Frameworks */,
+				BEF30C7B4C3E5595C7362E45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Designs By LAGB";
 				TargetAttributes = {
 					E5C12F12206338AE00D26729 = {
@@ -172,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52B0DB62064628000F8A1F4 /* Info.plist in Resources */,
 				E5C12F21206338AE00D26729 /* LaunchScreen.storyboard in Resources */,
 				E5C12F1E206338AE00D26729 /* Assets.xcassets in Resources */,
 				E5C12F1C206338AE00D26729 /* Main.storyboard in Resources */,
@@ -181,6 +206,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9E9120D210245E3403D3E72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF30C7B4C3E5595C7362E45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B18F2707E27F4A362F8BB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oil Dropper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5C12F0F206338AE00D26729 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,13 +267,13 @@
 			files = (
 				E5C12F3420635E5A00D26729 /* LightVC.swift in Sources */,
 				E5C12F19206338AE00D26729 /* HomeVC.swift in Sources */,
-				E5C12F3620635E6B00D26729 /* SessionVC.swift in Sources */,
 				E5C12F2C20635E0A00D26729 /* PumpVC.swift in Sources */,
-				E5C12F3820636F0500D26729 /* BluetoothManager.swift in Sources */,
-				E5C12F3A206375A500D26729 /* PeripheralManager.swift in Sources */,
+				E5C12F3820636F0500D26729 /* Bluetooth.swift in Sources */,
 				E5C12F2E20635E1200D26729 /* HeatVC.swift in Sources */,
+				E52B0DBA2064868300F8A1F4 /* Extensions.swift in Sources */,
 				E5C12F3220635E5200D26729 /* PairedDevicesVC.swift in Sources */,
 				E5C12F3020635E1A00D26729 /* PendulumVC.swift in Sources */,
+				E5AF66BC2069AB52005F9361 /* StatVC.swift in Sources */,
 				E5C12F17206338AE00D26729 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +314,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -242,6 +322,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -292,6 +373,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -299,6 +381,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -330,31 +413,35 @@
 		};
 		E5C12F26206338AE00D26729 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693E7C4FBAADE86050515BB3 /* Pods-Oil Dropper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWSMFUQHS2;
-				INFOPLIST_FILE = "Oil Dropper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Oil Dropper/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.designsbylagb.Oil-Dropper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lagbtech.oil-dropper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E5C12F27206338AE00D26729 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E94CB461633AF8251D33C30 /* Pods-Oil Dropper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWSMFUQHS2;
-				INFOPLIST_FILE = "Oil Dropper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Oil Dropper/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.designsbylagb.Oil-Dropper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lagbtech.oil-dropper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

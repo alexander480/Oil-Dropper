@@ -27,6 +27,7 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     var currentTemp: String?
     
     var bluetoothOn = false
+    var encodingType = "utf8"
     
     override init() {
         super.init()
@@ -95,16 +96,31 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         if let p = self.peripheral {
             if let c = self.char {
                 self.lastInq = ValueToSend
-                if let data = ValueToSend.data(using: String.Encoding.utf8) {
-                    p.writeValue(data, for: c, type: .withResponse)
-                    p.readValue(for: c)
-                    if let ValueReturned = c.value {
-                        if let finalValue = String(data: ValueReturned, encoding: String.Encoding.utf8) { Closure(finalValue) }
-                        else { Closure("") }
+                if self.encodingType == "utf8" {
+                    if let data = ValueToSend.data(using: String.Encoding.utf8) {
+                        p.writeValue(data, for: c, type: .withResponse)
+                        p.readValue(for: c)
+                        if let ValueReturned = c.value {
+                            if let finalValue = String(data: ValueReturned, encoding: String.Encoding.utf8) { Closure(finalValue) }
+                            else { Closure("") }
+                        }
+                        else { print("[ERROR] 'ValueReturned' Invalid") }
                     }
-                    else { print("[ERROR] 'ValueReturned' Invalid") }
+                    else { print("[ERROR] 'ValueToSend' Invalid") }
                 }
-                else { print("[ERROR] 'ValueToSend' Invalid") }
+                else if self.encodingType == "ascii" {
+                    if let data = ValueToSend.data(using: String.Encoding.ascii) {
+                        p.writeValue(data, for: c, type: .withResponse)
+                        p.readValue(for: c)
+                        if let ValueReturned = c.value {
+                            if let finalValue = String(data: ValueReturned, encoding: String.Encoding.utf8) { Closure(finalValue) }
+                            else { Closure("") }
+                        }
+                        else { print("[ERROR] 'ValueReturned' Invalid") }
+                    }
+                    else { print("[ERROR] 'ValueToSend' Invalid") }
+                }
+                
             }
             else { print("[ERROR] Invalid Characteristic") }
         }
@@ -115,9 +131,17 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         if let err = error { print("[ERROR] Invalid Value For Characteristic: \(err.localizedDescription)"); return }
         if self.lastInq == "x" {
             if let data = characteristic.value {
-                if let val = String(data: data, encoding: String.Encoding.utf8) {
-                    print("Temperature: \(val)ºC")
-                    self.currentTemp = val
+                if self.encodingType == "utf8" {
+                    if let val = String(data: data, encoding: String.Encoding.utf8) {
+                        print("Temperature: \(val)ºC")
+                        self.currentTemp = val
+                    }
+                }
+                else if self.encodingType == "ascii" {
+                    if let val = String(data: data, encoding: String.Encoding.ascii) {
+                        print("Temperature: \(val)ºC")
+                        self.currentTemp = val
+                    }
                 }
             }
         }
