@@ -148,7 +148,6 @@
 				E5C12F10206338AE00D26729 /* Frameworks */,
 				E5C12F11206338AE00D26729 /* Resources */,
 				B9E9120D210245E3403D3E72 /* [CP] Embed Pods Frameworks */,
-				BEF30C7B4C3E5595C7362E45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,7 +212,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -222,22 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEF30C7B4C3E5595C7362E45 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Oil Dropper/Pods-Oil Dropper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8B18F2707E27F4A362F8BB5 /* [CP] Check Pods Manifest.lock */ = {
